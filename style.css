@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./asset/valentin-muller-bWtd1ZyEy6w-unsplash.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cityInputField, .submitBtn, .weatherContainer{
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #395050;
+  box-shadow: 4px 0px 10px 3px rgb(204, 204, 204);
+  outline: none;
+  border-radius: 10px;
+  background-color: #394f5081;
+  color: rgb(31, 190, 111);
+}
+
+.cityInputField::placeholder {
+  color: rgb(31, 190, 111);
+}
+
+.cityInputField:active,
+.cityInputField:focus {
+  background-color: #394f5081;
+}
+
+.weatherContainer {
+  text-align: center;
+  margin-top: 30px;
+  color: rgb(10, 221, 116);
+}
+
+.city {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.country {
+  font-size: 14px;
+  padding: 5px;
+  background-color: rgb(6, 158, 158);
+  border-radius: 50%;
+  color: white;
+}
+
+.temp {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.minTemp,
+.maxTemp ,
+.humidity{
+    padding: 7px;
+    font-size: 12px;
+}
+
+.hide {
+  display: none;
+}
+
+@media only screen  and (min-width : 1024px) {
+  .cityInputField, .submitBtn, .weatherContainer{
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .city {
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  
+  .country {
+    font-size: 24px;
+    padding: 10px;
+  }
+  
+  .temp {
+    font-size: 20px;
+  }
+  
+  .minTemp,
+  .maxTemp ,
+  .humidity{
+    font-size: 18px;
+    padding: 15px;
+  }
+}
